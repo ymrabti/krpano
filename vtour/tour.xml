@@ -101,7 +101,7 @@
 		if(startactions !== null, startactions() );
     </action>
     <scene name="scene_360_5058_Stitch_XHC" title="360_5058_Stitch_XHC" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/360_5058_Stitch_XHC.tiles/thumb.jpg" lat="" lng="" heading="">
-        <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/decrypted-gyro2-unminified.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" />
+        <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/gyro2.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" />
         <control bouncinglimits="calc:image.cube ? true : false" />
         <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
         <preview url="https://d2mg7gb9u1krfg.cloudfront.net/camera-20151113-120900-000000062/preview.jpg" />
