@@ -6,14 +6,14 @@
     <include url="skin/vtourskin.xml" />
     <include url="skin/vtourskin_design_glass.xml" />
 
-    <action name="gyro_available_info">
+    <!-- <action name="gyro_available_info">
 		set(layer[infotext].html, 'Gyroscope available, press the gyro button...');
 		set(layer[gyrobutton].visible, true);
     </action>
 
     <action name="gyro_not_available_info" xautorun.flash="onstart">
 		set(layer[infotext].html, 'No gyroscope available...');
-    </action>
+    </action> -->
 
     <!-- startup action - load the first scene -->
     <action name="startup" autorun="onstart">
@@ -25,7 +25,7 @@
 
     <scene name="scene_360_5058_Stitch_XHC" title="360_5058_Stitch_XHC" onstart="" havevrimage.mobilevr="false" havevrimage.no-mobilevr="true" thumburl="panos/360_5058_Stitch_XHC.tiles/thumb.jpg" lat="" lng="" heading="">
 
-        <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/gyro2.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" />
+        <!-- <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/gyro2.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" /> -->
 
         <control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -48,7 +48,7 @@
 
     <scene name="scene_360_5059_Stitch_XHC" title="360_5059_Stitch_XHC" onstart="" thumburl="panos/360_5059_Stitch_XHC.tiles/thumb.jpg" lat="" lng="" heading="">
 
-        <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/gyro2.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" />
+        <!-- <plugin name="gyro" devices="html5" url="%VIEWER%/plugins/gyro2.js" enabled="false" onavailable="gyro_available_info();" onunavailable="gyro_not_available_info();" softstart="1" /> -->
 
         <control bouncinglimits="calc:image.cube ? true : false" />
 
