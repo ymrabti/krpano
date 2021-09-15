@@ -13,7 +13,7 @@ var krpanoplugin = function () {
                     c > 3325 && (e = n)
                 } e && (Y[S] !== i && (Y[S] = i, Y.trace(2, "The gyroscope support is broken in this Chrome version!"), Y.trace(2, "The gyro or VR control might not work at all or be jerky and delayed!")), tt = 0)
             } tt == 0 && (dt = 1);
-            if ((Z.ios || Z.safari) && Y[f].protocol == "https") {
+            if ((Z.ios || Z.safari) && Y[f].protocol == 'https') {
                 var h = G[dt == 1 ? "DeviceOrientationEvent" : "DeviceMotionEvent"];
                 if (h && h[_]) {
                     pt = h, setTimeout(Dt, 1);
@@ -23,7 +23,7 @@ var krpanoplugin = function () {
             var p = et[a] != "" && et[a] != r, d = Z.desktop && it == n ? 500 : p ? 2500 : 1e4;
             setTimeout(_t, d)
         } else ht == n && (ht = i, Mt(), At(a))
-    } function Mt() { Y[P] !== i && Y[f].protocol != "https" && (Z[E] >= 74 || Z[A] >= 12.2) && (Y[P] = i, Y.trace(2, "HTTPS might be required for Gyro/VR support!")) } function _t() { G[t](o, Dt, n), G[t](s, Dt, n), kt = r, Y && ht == n && (ht = i, Mt(), At(a)) } function Dt(e) { e && G[t](e[L], Dt, n), kt = r, e && (e[L] == o || e[L] == s && e[b] && e.rotationRate) || pt ? (ht = i, at = i, At(D), rt && Ft()) : ht == n && (ht = i, Mt(), At(a)) } function Pt(e) {
+    } function Mt() { Y[P] !== i && Y[f].protocol != 'https' && (Z[E] >= 74 || Z[A] >= 12.2) && (Y[P] = i, Y.trace(2, "HTTPS might be required for Gyro/VR support!")) } function _t() { G[t](o, Dt, n), G[t](s, Dt, n), kt = r, Y && ht == n && (ht = i, Mt(), At(a)) } function Dt(e) { e && G[t](e[L], Dt, n), kt = r, e && (e[L] == o || e[L] == s && e[b] && e.rotationRate) || pt ? (ht = i, at = i, At(D), rt && Ft()) : ht == n && (ht = i, Mt(), At(a)) } function Pt(e) {
         var t = 2;
         switch (("" + e)[y]()) {
             case "0": case "off": t = 0;
